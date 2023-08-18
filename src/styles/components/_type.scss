@@ -1,0 +1,163 @@
+@import url("https://use.typekit.net/cbm5vkp.css");
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@700;800&display=swap");
+
+body {
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: $size-text;
+  line-height: 1.333;
+  color: $c-text;
+  padding: 0;
+  margin: 0;
+}
+
+.title {
+  font-weight: bold;
+  font-family: "syne", sans-serif;
+  color: $c-title;
+  line-height: 32px;
+
+  &__biggest {
+    font-size: $size-title-biggest;
+    text-transform: uppercase;
+  }
+
+  &__big {
+    text-transform: uppercase;
+    font-size: $size-title-big;
+    margin: 0 0 2em 0;
+    text-align: center;
+  }
+
+  &__medium {
+    max-width: 100%;
+    font-size: $size-title-medium;
+    margin-right: 1em;
+  }
+
+  &__little {
+    font-size: $size-title-little;
+  }
+
+  &__gems {
+    width: 16px;
+    margin-left: 0.25em;
+  }
+}
+
+.text--pink {
+  color: $c-text-pink;
+}
+
+p {
+  position: relative;
+  z-index: 20;
+  line-height: 32px;
+}
+
+.paragraph {
+  &__big {
+    font-size: $size-text-big;
+  }
+
+  &__bold {
+    font-weight: bold;
+  }
+}
+
+a {
+  font-weight: bold;
+  font-family: "syne", sans-serif;
+  text-decoration: none;
+  color: $c-text;
+  font-size: $size-text;
+}
+
+.text--pink {
+  color: $c-text-pink;
+  font-size: $size-text;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.sections {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.container__flex {
+  display: flex;
+}
+
+.container__title__medium {
+  align-items: baseline;
+  display: flex;
+}
+
+.circle--relative {
+  position: relative;
+  z-index: 10;
+}
+
+@media screen and (min-width: 1100px) {
+  body {
+    font-size: $size-desktop-text;
+    line-height: 42px;
+    color: $c-text;
+  }
+
+  .title {
+    line-height: 64px;
+
+    &__biggest {
+      font-size: $size-desktop-title-biggest;
+      margin-bottom: 12em;
+    }
+
+    &__big {
+      font-size: $size-desktop-title-big;
+      margin: 0 0 1em 0;
+      text-align: left;
+      max-width: 700px;
+    }
+
+    &__medium {
+      font-size: $size-desktop-title-medium;
+      margin-right: 1em;
+    }
+
+    &__little {
+      font-size: $size-desktop-title-little;
+    }
+
+    &__gems {
+      width: 37px;
+      margin-left: 0.25em;
+    }
+  }
+
+  p {
+    line-height: 32px;
+    max-width: 90%;
+  }
+
+  .paragraph {
+    &__big {
+      line-height: 42px;
+      font-size: $size-desktop-text-big;
+    }
+  }
+
+  a {
+    font-size: $size-link;
+  }
+
+  .text--pink {
+    color: $c-text-pink;
+    font-size: $size-desktop-text;
+  }
+}

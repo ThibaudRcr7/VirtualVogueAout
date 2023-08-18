@@ -1,0 +1,54 @@
+@import "utils/variables";
+@import "components/type";
+@import "components/header";
+@import "components/section";
+@import "components/footer";
+@import "components/tablet";
+@import "components/desktop";
+@import "components/animations";
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $c-bg;
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+
+  &::before {
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-repeat: repeat;
+    background-image: url("../../assets/images/grille-background.png");
+    opacity: 0.2;
+    z-index: -1;
+  }
+
+  &::after {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("../assets/images/fond.png");
+    opacity: 0.3;
+    z-index: -2;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  body {
+    &::before {
+      background-image: url("../assets/images/grille-desktop.png");
+      opacity: 0.1;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+@media screen and (min-width: 700px) {
+  .section--vogue {
+    .title__big__circle {
+      top: 25%;
+      left: 25%;
+      width: 50%;
+      height: 32px;
+    }
+
+    .paragraph__big__circle {
+      &--first {
+        left: 5%;
+        top: 8px;
+        width: 80%;
+        height: 100px;
+        transform: rotate(-6deg);
+      }
+
+      &--second {
+        left: 5%;
+        top: 8px;
+        width: 80%;
+        height: 100px;
+        transform: rotate(-4deg);
+      }
+    }
+  }
+
+  .paragraph__decal {
+    margin-top: 3em;
+    max-width: 500px;
+  }
+
+  .section--style {
+    .paragraph__big__circle--first {
+      top: 0;
+      width: 90%;
+      height: 90%;
+      transform: rotate(-6deg);
+    }
+
+    .paragraph__big__circle--second {
+      top: 0;
+      width: 90%;
+      height: 90%;
+      transform: rotate(-4deg);
+    }
+  }
+
+  .section--solution {
+    .title__big__circle {
+      top: 1%;
+      left: 25%;
+      transform: rotate(6deg);
+      width: 50%;
+      height: 32px;
+    }
+  }
+
+  .simulation-img {
+    max-width: 98%;
+  }
+
+  .section--end {
+    .paragraph__big__circle--first {
+      top: 1%;
+      left: 1%;
+      width: 90%;
+      height: 100px;
+      transform: rotate(-7deg);
+    }
+
+    .paragraph__big__circle--second {
+      top: 1%;
+      left: 1%;
+      width: 90%;
+      height: 100px;
+      transform: rotate(-5deg);
+    }
+  }
+}
